@@ -19,6 +19,17 @@ cd grid-layout
 
 ```
 cd my-singlepage-layout
+```
+
+### サーバー起動
+
+```
 npm install
 gulp serve
 ```
+
+### ブラウザで確認
+
+BrowserSync を使っているので、デスクトップ用、スマホ用を同時に確認できる。
+
+* [http://localhost:3000](http://localhost:3000)
