@@ -1,0 +1,14 @@
+{
+  "name": "my-standard-layout",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/inouetakuya/html5-css3-modern-coding/standard-layout",
+  "license": "MIT",
+  "scripts": {
+    "serve": "browser-sync start --server 'src' --files 'src/css/*.css', 'src/*.html'"
+  },
+  "dependencies": { },
+  "devDependencies": {
+    "browser-sync": "^2.24.6"
+  }
+}
