@@ -1,3 +1,33 @@
+@charset "UTF-8";
+
+html {
+  /**
+    主要なブラウザのデフォルトフォントサイズは 16px なので、62.5% を指定して 10px 相当にする
+    px 指定ではなく % 指定にしておくことで、ユーザーがブラウザの設定でデフォルトの文字サイズを変更していた場合にもある程度その設定を反映することができる
+  */
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  font-size: 1.2rem;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #d03c56;
+
+  /**
+    リンクの下線を外すとリンクとテキストが区別しづらくなってしまうデメリットがあるが、
+    今回のサイトはブロック単位のリンクが多いため、デフォルトで下線を外している
+  */
+  text-decoration: none;
+}
+
 .header {
   width: 100%;
 }
