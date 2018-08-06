@@ -6,7 +6,7 @@ HTML5/CSS3 モダンコーディング
 ## PART 1
 
 ```
-cd standard-layout
+cd my-standard-layout
 ```
 
 ## PART 2
