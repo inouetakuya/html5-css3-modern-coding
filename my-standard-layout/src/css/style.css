@@ -30,6 +30,9 @@ a:link, a:visited, a:hover, a:active {
 
 .header {
   width: 100%;
+  padding: 28px 0 10px;
+  background: url("../images/bg-header.gif");
+  box-shadow: 0 0 10px 1px #e3e3e3;
 }
 
 .wrapper {
