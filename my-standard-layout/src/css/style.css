@@ -30,6 +30,9 @@ a:link, a:visited, a:hover, a:active {
 
 .header {
   width: 100%;
+  padding: 28px 0 10px;
+  background: url("../images/bg-header.gif") repeat-x;
+  box-shadow: 0 0 10px 1px #e3e3e3;
 }
 
 .wrapper {
@@ -58,15 +61,60 @@ a:link, a:visited, a:hover, a:active {
   clear: both;
 }
 
-.header, .main, .side-menu, .footer {
+.main, .side-menu, .footer {
   border: 1px solid #aaa;
   background-color: #ccc;
 }
 
-.header, .footer {
+.footer {
   height: 100px;
 }
 
 .main, .side-menu {
   height: 500px;
+}
+
+.logo {
+  width: 225px;
+  height: 56px;
+  margin: 0 auto;
+  background: url("../images/logo.png");
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.global-nav {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.global-nav .nav-item {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.global-nav .nav-item a {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 8px;
+  color: #666;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  transition: 0.15s;
+}
+
+.global-nav .nav-item.active a,
+.global-nav .nav-item a:hover {
+  background-color: #d03c56;
+  color: #fff;
 }
