@@ -31,7 +31,7 @@ a:link, a:visited, a:hover, a:active {
 .header {
   width: 100%;
   padding: 28px 0 10px;
-  background: url("../images/bg-header.gif");
+  background: url("../images/bg-header.gif") repeat-x;
   box-shadow: 0 0 10px 1px #e3e3e3;
 }
 
@@ -61,12 +61,12 @@ a:link, a:visited, a:hover, a:active {
   clear: both;
 }
 
-.header, .main, .side-menu, .footer {
+.main, .side-menu, .footer {
   border: 1px solid #aaa;
   background-color: #ccc;
 }
 
-.header, .footer {
+.footer {
   height: 100px;
 }
 
