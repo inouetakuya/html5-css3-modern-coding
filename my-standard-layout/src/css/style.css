@@ -13,11 +13,30 @@
   width: 660px;
 }
 
-.sidemenu {
+.side-menu {
   float: right;
   width: 275px;
 }
 
 .footer {
   width: 100%;
+}
+
+.clear-fix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header, .main, .side-menu, .footer {
+  border: 1px solid #aaa;
+  background-color: #ccc;
+}
+
+.header, .footer {
+  height: 100px;
+}
+
+.main, .side-menu {
+  height: 500px;
 }
