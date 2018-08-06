@@ -52,7 +52,7 @@ a:link, a:visited, a:hover, a:active {
   width: 100%;
 }
 
-.clear-fix::after {
+.clearfix::after {
   content: '';
   display: block;
   clear: both;
