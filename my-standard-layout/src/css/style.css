@@ -73,3 +73,19 @@ a:link, a:visited, a:hover, a:active {
 .main, .side-menu {
   height: 500px;
 }
+
+.logo {
+  width: 225px;
+  height: 56px;
+  margin: 0 auto;
+  background: url("../images/logo.png");
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
