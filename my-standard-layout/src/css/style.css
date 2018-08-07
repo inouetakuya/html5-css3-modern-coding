@@ -412,3 +412,33 @@ a:link, a:visited, a:hover, a:active {
 .documents a:hover {
   text-decoration: underline;
 }
+
+.search-box {
+  padding: 15px;
+  background-color: #ccc;
+  font-size: 0; /* display プロパティの初期値が inline-block である input 要素間の空白を消すため */
+}
+
+.search-box > * {
+  font-size: 1.2rem;
+}
+
+.search-box .search-input {
+  width: 205px;
+  height: 26px;
+  padding: 0 10px;
+  border: none;
+}
+
+.search-box .search-button {
+  width: 40px;
+  height: 26px;
+  border: none;
+  background-color: #d03c56;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-box .text {
+  margin-top: 12px;
+}
