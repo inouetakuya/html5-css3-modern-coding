@@ -304,6 +304,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .ranking .ranking-item {
+  position: relative;
   margin-top: 15px;
 }
 
@@ -315,11 +316,6 @@ a:link, a:visited, a:hover, a:active {
 
 .ranking .ranking-item a:hover {
   opacity: 0.8;
-}
-
-.ranking .image-wrapper {
-  position: relative;
-  display: inline-block;
 }
 
 .ranking .image {
