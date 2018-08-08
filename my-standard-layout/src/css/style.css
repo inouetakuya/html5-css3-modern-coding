@@ -317,6 +317,11 @@ a:link, a:visited, a:hover, a:active {
   opacity: 0.8;
 }
 
+.ranking .image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
 .ranking .image {
   width: 55px;
   height: 55px;
@@ -324,11 +329,12 @@ a:link, a:visited, a:hover, a:active {
 
 .ranking .text {
   display: inline-block;
-  width: 182px;
+  width: calc(275px - 55px - 20px);
   color: #000;
   vertical-align: top;
   font-size: 1.2rem;
   line-height: 1.5;
+  margin-left: 20px;
 }
 
 .ranking .order::before {
@@ -339,11 +345,13 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .ranking .order {
+  position: absolute;
+  top: -9px;
+  left: calc(55px - 9px);
   display: inline-block;
   width: 18px;
   height: 18px;
   border-radius: 9px;
-  margin: 0 10px;
   border: 1px solid #ccc;
   color: #aaa;
   vertical-align: 20px; /* 隣りにある高さ 55px の画像に対して中央に表示されるように調整 */
@@ -371,6 +379,10 @@ a:link, a:visited, a:hover, a:active {
 
 .ranking .ranking-item:nth-of-type(3) .order {
   background-color: #a0541a;
+}
+
+.ranking .ranking-item:nth-of-type(n+4) .order {
+  background-color: #fff;
 }
 
 .documents {
