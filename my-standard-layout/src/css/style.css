@@ -336,15 +336,13 @@ a:link, a:visited, a:hover, a:active {
   counter-increment: ranking;
   display: inline-block; /* rotate は inline の要素にはかけられないため */
   font-size: 1.0rem;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
 }
 
 .ranking .order {
   display: inline-block;
   width: 18px;
   height: 18px;
+  border-radius: 9px;
   margin: 0 10px;
   border: 1px solid #ccc;
   color: #aaa;
@@ -352,9 +350,6 @@ a:link, a:visited, a:hover, a:active {
   text-align: center;
   font-weight: bold;
   line-height: 16px; /* height から border を引いた値。縦方向に中央寄せにするため */
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
 }
 
 .ranking .ranking-item:nth-of-type(1) .order,
