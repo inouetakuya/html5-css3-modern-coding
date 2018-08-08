@@ -336,7 +336,6 @@ a:link, a:visited, a:hover, a:active {
 .ranking .order::before {
   content: counter(ranking);
   counter-increment: ranking;
-  display: inline-block; /* rotate は inline の要素にはかけられないため */
   font-size: 1.0rem;
 }
 
@@ -350,7 +349,6 @@ a:link, a:visited, a:hover, a:active {
   border-radius: 50%;
   border: 1px solid #ccc;
   color: #aaa;
-  vertical-align: 20px; /* 隣りにある高さ 55px の画像に対して中央に表示されるように調整 */
   text-align: center;
   font-weight: bold;
   line-height: 16px; /* height から border を引いた値。縦方向に中央寄せにするため */
