@@ -347,7 +347,7 @@ a:link, a:visited, a:hover, a:active {
   display: inline-block;
   width: 18px;
   height: 18px;
-  border-radius: 9px;
+  border-radius: 50%;
   border: 1px solid #ccc;
   color: #aaa;
   vertical-align: 20px; /* 隣りにある高さ 55px の画像に対して中央に表示されるように調整 */
