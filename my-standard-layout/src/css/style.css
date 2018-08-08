@@ -304,6 +304,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .ranking .ranking-item {
+  position: relative;
   margin-top: 15px;
 }
 
@@ -324,37 +325,33 @@ a:link, a:visited, a:hover, a:active {
 
 .ranking .text {
   display: inline-block;
-  width: 182px;
+  width: calc(275px - 55px - 20px);
   color: #000;
   vertical-align: top;
   font-size: 1.2rem;
   line-height: 1.5;
+  margin-left: 20px;
 }
 
 .ranking .order::before {
   content: counter(ranking);
   counter-increment: ranking;
-  display: inline-block; /* rotate は inline の要素にはかけられないため */
   font-size: 1.0rem;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
 }
 
 .ranking .order {
+  position: absolute;
+  top: -9px;
+  left: calc(55px - 9px);
   display: inline-block;
   width: 18px;
   height: 18px;
-  margin: 0 10px;
+  border-radius: 50%;
   border: 1px solid #ccc;
   color: #aaa;
-  vertical-align: 20px; /* 隣りにある高さ 55px の画像に対して中央に表示されるように調整 */
   text-align: center;
   font-weight: bold;
   line-height: 16px; /* height から border を引いた値。縦方向に中央寄せにするため */
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
 }
 
 .ranking .ranking-item:nth-of-type(1) .order,
@@ -376,6 +373,10 @@ a:link, a:visited, a:hover, a:active {
 
 .ranking .ranking-item:nth-of-type(3) .order {
   background-color: #a0541a;
+}
+
+.ranking .ranking-item:nth-of-type(n+4) .order {
+  background-color: #fff;
 }
 
 .documents {
