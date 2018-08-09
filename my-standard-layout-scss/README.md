@@ -1,5 +1,5 @@
-My Standard Layout
-==================
+My Standard Layout (SCSS)
+=========================
 
 ## Setup
 
@@ -18,7 +18,7 @@ yarn run serve
 ```
 
 ```
-open http://localhost:3001
+open http://localhost:3000
 ```
 
-Browsersync の設定ページは http://localhost:3002
+Browsersync の設定ページは http://localhost:3001
