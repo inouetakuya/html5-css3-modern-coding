@@ -1,0 +1,25 @@
+$main-width: 660px;
+$side-menu-width: 275px;
+$side-menu-margin-left: 35px;
+
+.wrapper {
+  // TODO: 下記のように書きたかったんだけどエラーになるのであとで調べる
+  // width: calc($main-width + $side-menu-width + $side-menu-margin-left);
+
+  width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  width: $main-width;
+  height: 500px; // dummy
+  background-color: $dummy-background-color;
+}
+
+.side-menu {
+  width: $side-menu-width;
+  height: 500px; // dummy
+  margin-left: $side-menu-margin-left;
+  background-color: $dummy-background-color;
+}
