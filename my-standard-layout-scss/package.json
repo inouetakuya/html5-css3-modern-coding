@@ -7,8 +7,9 @@
   "scripts": {
     "serve": "browser-sync start --server 'src' --files 'src/css/*.css', 'src/*.html'"
   },
-  "dependencies": { },
+  "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.24.6"
+    "browser-sync": "^2.24.6",
+    "node-sass": "^4.9.3"
   }
 }
