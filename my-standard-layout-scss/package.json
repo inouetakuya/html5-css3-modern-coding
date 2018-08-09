@@ -5,6 +5,7 @@
   "repository": "https://github.com/inouetakuya/html5-css3-modern-coding/standard-layout",
   "license": "MIT",
   "scripts": {
+    "build:scss": "node-sass --recursive src/scss --output src/css",
     "serve": "browser-sync start --server 'src' --files 'src/css/*.css', 'src/*.html'"
   },
   "dependencies": {},
