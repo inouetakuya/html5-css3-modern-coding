@@ -10,6 +10,10 @@ yarn install
 ## Development
 
 ```
+yarn run build:scss:watch
+```
+
+```
 yarn run serve
 ```
 
