@@ -1,12 +1,10 @@
 $main-width: 660px;
 $side-menu-width: 275px;
 $side-menu-margin-left: 35px;
+$wrapper-width: $main-width + $side-menu-width + $side-menu-margin-left;
 
 .wrapper {
-  // TODO: 下記のように書きたかったんだけどエラーになるのであとで調べる
-  // width: calc($main-width + $side-menu-width + $side-menu-margin-left);
-
-  width: 970px;
+  width: $wrapper-width;
   margin: 35px auto;
 }
 
