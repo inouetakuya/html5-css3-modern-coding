@@ -97,3 +97,15 @@ hr {
 input, select {
   vertical-align: middle;
 }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: $accent-color;
+
+  // リンクの下線を外すとリンクとテキストが区別しづらくなってしまうデメリットがあるが、
+  // 今回のサイトはブロック単位のリンクが多いため、デフォルトで下線を外している
+  text-decoration: none;
+}

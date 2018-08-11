@@ -1,0 +1,37 @@
+$main-width: 660px;
+$side-menu-width: 275px;
+$side-menu-margin-left: 35px;
+$wrapper-width: $main-width + $side-menu-width + $side-menu-margin-left;
+
+html {
+  // 主要なブラウザのデフォルトフォントサイズは 16px なので、62.5% を指定して 10px 相当にする
+  // px 指定ではなく % 指定にしておくことで、ユーザーがブラウザの設定でデフォルトの文字サイズを変更していた場合にもある程度その設定を反映することができる
+  font-size: 62.5%;
+}
+
+body {
+  color: $text-color;
+  font-size: 1.2rem;
+  font-family: "Hiragino Gothic ProN", Meiryo, san-serif;
+}
+
+.wrapper {
+  width: $wrapper-width;
+  margin: 35px auto;
+}
+
+.main {
+  display: block; // IE でもブロックレベルとして認識されるようにするため
+  float: left;
+  width: $main-width;
+  height: 500px; // dummy
+  background-color: $dummy-background-color;
+}
+
+.side-menu {
+  float: left;
+  width: $side-menu-width;
+  height: 500px; // dummy
+  margin-left: $side-menu-margin-left;
+  background-color: $dummy-background-color;
+}
