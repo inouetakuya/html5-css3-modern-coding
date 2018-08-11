@@ -20,31 +20,32 @@
     }
   }
 
-  .nav {
-    // .nav-list を中央寄せにすることが思うようにいかなかったので、怒りの Flexbox
-    display: flex;
-    justify-content: center;
+  .global-nav {
+    margin-top: 15px;
+    text-align: center;
 
     .nav-item {
       display: inline-block;
-      float: left;
-      width: 100px;
-      padding: 8px;
-      border-radius: 8px;
-      text-align: center;
-      letter-spacing: 1px;
+      margin: 0 10px;
 
       a {
-        color: $primary-text-color;
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 8px;
+        color: $secondary-text-color;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        transition: 0.15s;
       }
     }
 
-    .nav-item.active {
+    .nav-item.active a,
+    .nav-item a:hover {
       background-color: $accent-color;
-
-      a {
-        color: $primary-text-color--is-bg-dark;
-      }
+      color: $primary-text-color--is-bg-dark;
     }
   }
 }
