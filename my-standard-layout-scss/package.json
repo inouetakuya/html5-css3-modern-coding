@@ -5,12 +5,15 @@
   "repository": "https://github.com/inouetakuya/html5-css3-modern-coding/my-standard-layout-scss",
   "license": "MIT",
   "scripts": {
-    "build:scss": "node-sass --recursive src/scss --output src/css",
-    "build:scss:watch": "yarn run build:scss && yarn run build:scss --watch",
+    "build:scss": "yarn run clean:css && node-sass --recursive src/scss --output src/css",
+    "build:scss:watch": "nodemon --watch src/scss --ext scss --exec 'yarn run build:scss'",
+    "clean:css": "rimraf src/css",
     "serve": "browser-sync start --server 'src' --files 'src/css/*.css', 'src/*.html'"
   },
   "devDependencies": {
     "browser-sync": "^2.24.6",
-    "node-sass": "^4.9.3"
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.3",
+    "rimraf": "^2.6.2"
   }
 }
