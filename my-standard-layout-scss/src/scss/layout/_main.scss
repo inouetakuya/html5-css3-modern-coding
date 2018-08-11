@@ -9,6 +9,7 @@ $wrapper-width: $main-width + $side-menu-width + $side-menu-margin-left;
 }
 
 .main {
+  display: block; /* IE でもブロックレベルとして認識されるようにするため */
   float: left;
   width: $main-width;
   height: 500px; // dummy
