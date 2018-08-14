@@ -1,5 +1,51 @@
 .header {
   width: 100%;
-  height: 100px; // dummy
-  background-color: $dummy-background-color;
+  padding: 28px 0 10px;
+  background: url("../../images/bg-header.gif") repeat-x;
+  box-shadow: 0 0 10px 1px #e3e3e3;
+
+  .logo {
+    width: 225px;
+    height: 56px;
+    margin: 0 auto;
+    background: url("../../images/logo.png");
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .global-nav {
+    margin-top: 15px;
+    text-align: center;
+
+    .nav-item {
+      display: inline-block;
+      margin: 0 10px;
+
+      a {
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 8px;
+        color: $secondary-text-color;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        transition: 0.15s;
+      }
+    }
+
+    .nav-item.active a,
+    .nav-item a:hover {
+      background-color: $accent-color;
+      color: $primary-text-color--is-bg-dark;
+    }
+  }
 }
