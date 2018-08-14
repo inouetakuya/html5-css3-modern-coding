@@ -1,0 +1,41 @@
+$hot-topic__image-width: 330px;
+
+.hot-topic {
+  background-color: $primary-color;
+
+  &__image {
+    float: left;
+    width: $hot-topic__image-width;
+  }
+
+  &__content {
+    position: relative;
+    float: left;
+    width: $main-width - $hot-topic__image-width;
+    padding: 105px 25px 0;
+  }
+
+  &__heading {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: $primary-text-color--is-bg-dark;
+  }
+
+  &__description {
+    margin-top: 20px;
+    line-height: 1.5;
+    color: $primary-text-color--is-bg-dark;
+  }
+
+  &__datetime {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 4px 16px;
+    letter-spacing: 1px;
+    background-color: $white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: $primary-color;
+  }
+}

@@ -1,11 +1,14 @@
 @charset "UTF-8";
 
+@import "foundation/variables";
 @import "foundation/colors";
 @import "foundation/reset";
 
 @import "layout/header";
 @import "layout/footer";
 @import "layout/main";
+
+@import "components/hot_topic";
 
 @import "utilities";
 
