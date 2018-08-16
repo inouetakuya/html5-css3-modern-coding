@@ -2,6 +2,15 @@ $hot-topic__image-width: 330px;
 
 .hot-topic {
   background-color: $primary-color;
+  transition: opacity 0.15s;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &__title {
+    display: none;
+  }
 
   &__image {
     float: left;
@@ -16,18 +25,19 @@ $hot-topic__image-width: 330px;
   }
 
   &__heading {
-    font-size: 2rem;
+    font-size: 2.0rem;
+    font-weight: normal;
     line-height: 1.5;
     color: $primary-text-color--is-bg-dark;
   }
 
   &__description {
     margin-top: 20px;
-    line-height: 1.5;
+    line-height: 1.6;
     color: $primary-text-color--is-bg-dark;
   }
 
-  &__datetime {
+  &__date {
     position: absolute;
     top: 60px;
     left: 0;
