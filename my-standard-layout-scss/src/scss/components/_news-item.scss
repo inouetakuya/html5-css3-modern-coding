@@ -1,0 +1,46 @@
+.news-item {
+  padding: 8px 16px;
+  list-style: none;
+
+  overflow: hidden;
+  text-wrap: none;
+
+  &:nth-of-type(even) {
+    background: url("../../images/bg-slash.gif");
+  }
+
+  .date, &__title {
+    color: $primary-color;
+  }
+
+  .date {
+    display: inline-block;
+    width: 128px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  &__category {
+    display: inline-block;
+    width: 60px;
+    margin-left: 8px;
+    margin-right: 16px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: $accent-color;
+    border-radius: 4px;
+    text-align: center;
+    color: $white;
+    letter-spacing: 1px;
+  }
+
+  &__news {
+    background-color: $primary-color;
+  }
+
+  &__title {
+    font-weight: bold;
+
+    // TODO: 文字列の折り返しなしで、途中で ... 表記にする
+  }
+}

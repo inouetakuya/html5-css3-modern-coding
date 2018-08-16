@@ -1,0 +1,15 @@
+.news {
+  margin-top: 30px;
+
+  &__heading {
+    padding: 8px;
+    background: url("../../images/bg-slash.gif") repeat;
+    font-size: 1.6rem;
+  }
+
+  &__list {
+    li:nth-of-type(even) {
+      // background: url("../../images/bg-slash.gif");
+    }
+  }
+}

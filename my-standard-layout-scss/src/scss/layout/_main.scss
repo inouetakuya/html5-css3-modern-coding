@@ -19,8 +19,6 @@ body {
   display: block; // IE でもブロックレベルとして認識されるようにするため
   float: left;
   width: $main-width;
-  height: 500px; // dummy
-  background-color: $dummy-background-color;
 }
 
 .side-menu {
