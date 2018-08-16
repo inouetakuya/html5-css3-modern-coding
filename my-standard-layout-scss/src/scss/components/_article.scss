@@ -16,7 +16,10 @@
   &__body {
     margin-top: 8px;
 
-    // TODO: 文字列の折り返しなしで ... 表記にする
+    // 文字列の折り返しなしで ... 表記にする
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   &__date {
