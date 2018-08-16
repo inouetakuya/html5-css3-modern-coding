@@ -3,18 +3,25 @@
   list-style: none;
   width: 315px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  transition: opacity 0.15s;
+
+  &:hover {
+    opacity: 0.8;
+  }
 
   &__content {
-    padding: 32px 16px;
+    padding: 32px 16px 48px;
   }
 
   &__title {
+    color: $primary-color;
     font-size: 1.4rem;
     line-height: 1.5;
   }
 
   &__body {
     margin-top: 8px;
+    color: $primary-color;
 
     // 文字列の折り返しなしで ... 表記にする
     overflow: hidden;
@@ -25,7 +32,8 @@
   &__date {
     position: absolute;
     right: 0;
-    background-color: #76C047;
+    bottom: 15px;
+    background-color: #b5d264;
     padding: 4px 24px;
     color: $primary-color;
     font-weight: bold;
