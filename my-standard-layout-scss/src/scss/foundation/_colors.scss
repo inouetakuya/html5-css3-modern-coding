@@ -1,9 +1,11 @@
+$white: #fff;
+
 $primary-color: #2d3d54;
 $accent-color: #d03c56;
 
 $primary-text-color: #333;
 $secondary-text-color: #666;
 
-$primary-text-color--is-bg-dark: #fff;
+$primary-text-color--is-bg-dark: $white;
 
 $dummy-background-color: #ccc;

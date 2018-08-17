@@ -1,0 +1,58 @@
+.news-item {
+  max-height: 220px;
+  overflow-y: auto;
+  list-style: none;
+
+  a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 0;
+    transition: background-color 0.1s;
+  }
+
+  a:hover {
+    background-color: #fafaf8;
+  }
+
+  &:nth-of-type(even) a {
+    // li に背景画像を指定すると、hover したときに背景画像が隠れてしまうため
+    background: url("../../images/bg-slash.gif");
+  }
+
+  &__date, &__title {
+    color: $primary-color;
+  }
+
+  &__date {
+    display: inline-block;
+    width: 19%;
+    font-size: 1.0rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  &__category {
+    display: inline-block;
+    width: 8%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: $accent-color;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1.0rem;
+    color: $primary-text-color--is-bg-dark;
+    letter-spacing: 1px;
+  }
+
+  &__news {
+    background-color: $primary-color;
+  }
+
+  &__title {
+    display: inline-block;
+    width: 73%;
+    padding-left: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
