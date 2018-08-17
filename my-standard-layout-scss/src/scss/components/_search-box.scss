@@ -1,0 +1,25 @@
+.search-box {
+  margin-top: 30px;
+  padding: 16px;
+  background-color: #bbb;
+  font-size: 0;
+
+  &__input {
+    width: 200px;
+    font-size: 1.2rem;
+    color: #bbb;
+  }
+
+  // TODO: input と高さを揃える
+  &__search-button {
+    background-color: $accent-color;
+    border: 0;
+    font-size: 1.2rem;
+    color: $primary-text-color--is-bg-dark;
+  }
+
+  &__description {
+    margin-top: 8px;
+    font-size: 1.2rem;
+  }
+}
