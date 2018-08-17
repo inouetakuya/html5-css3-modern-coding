@@ -1,0 +1,56 @@
+$ranking-item__image-width: 55px;
+
+.ranking-item {
+  position: relative;
+  margin-top: 16px;
+  list-style: none;
+  font-size: 0;
+
+  // TODO: ランク数字を表示させる
+  &:after {
+    position: absolute;
+    left: 60px;
+    top: 16px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    content: "1";
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $primary-color;
+    border: $primary-color solid 1px;
+  }
+
+  &:nth-of-type(1):after {
+    background-color: $accent-color;
+    color: $primary-text-color--is-bg-dark;
+  }
+
+  &:nth-of-type(2):after {
+    background-color: $accent-color;
+    color: $primary-text-color--is-bg-dark;
+  }
+
+  &:nth-of-type(3):after {
+    background-color: $accent-color;
+    color: $primary-text-color--is-bg-dark;
+  }
+
+  &__image {
+    display: inline-block;
+  }
+
+  &__body {
+    display: inline-block;
+    width: calc(#{$side-menu-width} - #{$ranking-item__image-width});
+    padding-left: 30px;
+
+    // TODO: 上下中央に配置する
+    height: $ranking-item__image-width;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+}
