@@ -2,11 +2,6 @@ $hot-topic__image-width: 330px;
 
 .hot-topic {
   background-color: $primary-color;
-  transition: opacity 0.15s;
-
-  &:hover {
-    opacity: 0.85;
-  }
 
   &__title {
     display: none;

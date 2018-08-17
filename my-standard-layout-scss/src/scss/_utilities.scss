@@ -9,3 +9,11 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+.shine {
+  transition: opacity 0.15s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
