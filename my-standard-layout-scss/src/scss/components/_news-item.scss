@@ -54,10 +54,5 @@
     padding-left: 15px;
     font-size: 1.2rem;
     font-weight: bold;
-
-    // 文字列の折り返しなしで、途中で ... 表記にする
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 }
