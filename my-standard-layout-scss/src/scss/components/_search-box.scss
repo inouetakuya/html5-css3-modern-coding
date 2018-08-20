@@ -6,16 +6,20 @@
 
   &__input {
     width: 200px;
+    height: 26px;
+    padding: 0 10px;
     font-size: 1.2rem;
     color: #bbb;
+    border: none;
   }
 
-  // TODO: input と高さを揃える
   &__search-button {
+    height: 26px;
     background-color: $accent-color;
     border: 0;
     font-size: 1.2rem;
     color: $primary-text-color--is-bg-dark;
+    border: none;
   }
 
   &__description {
