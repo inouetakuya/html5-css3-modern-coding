@@ -46,7 +46,7 @@ $ranking-item__image-width: 55px;
     width: calc(#{$side-menu-width} - #{$ranking-item__image-width});
     padding-left: 30px;
 
-    // TODO: 上下中央に配置する
+    vertical-align: top; // リスト項目内の要素の縦方向の並びを上揃えにする
     height: $ranking-item__image-width;
 
     font-size: 1.2rem;
