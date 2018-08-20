@@ -14,7 +14,8 @@ $ranking-item__order-width: 18px;
   // 順位の数字の表示方法が分からなかったので要注意
   &__order:before {
     display: inline-block;
-    content: "1";
+    content: counter(ranking);
+    counter-increment: ranking;
     font-size: 1.0rem;
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
