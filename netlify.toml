@@ -7,5 +7,5 @@
 
 [build]
   base    = "my-standard-layout-scss"
-  publish = "src"
+  publish = "my-standard-layout-scss/src"
   command = "yarn run build:scss"
