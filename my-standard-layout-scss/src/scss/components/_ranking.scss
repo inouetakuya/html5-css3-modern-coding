@@ -1,3 +1,71 @@
+$ranking-item__image-width: 55px;
+$ranking-item__order-width: 18px;
+
 .ranking {
   counter-reset: ranking;
+}
+
+.ranking-item {
+  position: relative;
+  margin-top: 16px;
+  list-style: none;
+  font-size: 0;
+
+  &__image {
+    display: inline-block;
+  }
+
+  // 順位の数字の表示方法が分からなかったので要注意
+  &__order:before {
+    display: inline-block;
+    content: counter(ranking);
+    counter-increment: ranking;
+    font-size: 1.0rem;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  &__order {
+    display: inline-block;
+    width: $ranking-item__order-width;
+    height: $ranking-item__order-width;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    color: #aaa;
+    vertical-align: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 16px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  &:nth-of-type(1) &__order {
+    background-color: #dab413;
+    color: $primary-text-color--is-bg-dark;
+  }
+
+  &:nth-of-type(2) &__order {
+    background-color: #6e7b84;
+    color: $primary-text-color--is-bg-dark;
+  }
+
+  &:nth-of-type(3) &__order {
+    background-color: #a0541a;
+    color: $primary-text-color--is-bg-dark;
+  }
+
+  &__body {
+    display: inline-block;
+    width: calc(#{$side-menu-width} - #{$ranking-item__image-width} - #{$ranking-item__order-width} - 20px);
+
+    vertical-align: top; // リスト項目内の要素の縦方向の並びを上揃えにする
+    height: $ranking-item__image-width;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.5;
+  }
 }
