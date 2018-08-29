@@ -6,8 +6,10 @@ HTML5 / CSS3 モダンコーディング
 ## PART 1
 
 ```
-cd my-standard-layout
+cd my-standard-layout-scss
 ```
+
+See my-standard-layout-scss/README.md
 
 ## PART 2
 
