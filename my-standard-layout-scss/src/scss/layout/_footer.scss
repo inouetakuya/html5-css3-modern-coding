@@ -6,12 +6,30 @@
   .footer__content {
     margin: 0 auto;
     width: $main-wrapper-width;
+  }
 
-    .copyright {
-      margin-top: 30px;
-      text-align: center;
-      letter-spacing: 1px;
-      color: $primary-text-color--is-bg-dark;
+  .horizontal-link-list {
+    text-align: right;
+  }
+
+  .horizontal-link {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    & + & {
+      border-left: solid 1px #ccc;
     }
+
+    a, a:link, a:visited, a:hover, a:active {
+      color: #ccc;
+    }
+  }
+
+  .copyright {
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: $primary-text-color--is-bg-dark;
   }
 }
