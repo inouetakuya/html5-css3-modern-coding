@@ -42,7 +42,7 @@
       }
     }
 
-    .nav-item.active a,
+    .nav-item--active a,
     .nav-item a:hover {
       background-color: $accent-color;
       color: $primary-text-color--is-bg-dark;
