@@ -55,7 +55,7 @@ $ranking-item__order-width: 18px;
 
   &__body {
     display: inline-block;
-    width: calc(#{$side-menu-width} - #{$ranking-item__image-width} - #{$ranking-item__order-width} - 20px);
+    width: $side-menu-width - $ranking-item__image-width - $ranking-item__order-width - 20px;
 
     vertical-align: top; // リスト項目内の要素の縦方向の並びを上揃えにする
     height: $ranking-item__image-width;
