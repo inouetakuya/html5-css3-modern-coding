@@ -15,7 +15,7 @@ $hot-topic__image-width: 330px;
   &__content {
     position: relative;
     float: left;
-    width: $main-width - $hot-topic__image-width;
+    width: calc(#{$main-width} - #{$hot-topic__image-width});
     padding: 105px 25px 0;
   }
 
