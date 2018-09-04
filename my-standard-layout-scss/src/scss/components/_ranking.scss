@@ -21,8 +21,6 @@ $ranking-item__order-width: 18px;
     content: counter(ranking);
     counter-increment: ranking;
     font-size: 1.0rem;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
 
@@ -37,8 +35,6 @@ $ranking-item__order-width: 18px;
     text-align: center;
     font-weight: bold;
     line-height: 16px;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 
