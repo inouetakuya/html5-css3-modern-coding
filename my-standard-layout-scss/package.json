@@ -1,9 +1,8 @@
 {
   "name": "my-standard-layout-scss",
   "version": "1.0.0",
-  "main": "src/index.js",
   "repository": "https://github.com/inouetakuya/html5-css3-modern-coding/my-standard-layout-scss",
-  "license": "MIT",
+  "private": true,
   "scripts": {
     "build:scss": "yarn run clean:css && node-sass --recursive src/scss --output src/css",
     "build:scss:watch": "nodemon --watch src/scss --ext scss --exec 'yarn run build:scss'",
