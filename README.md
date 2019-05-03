@@ -1,5 +1,4 @@
-HTML5 / CSS3 モダンコーディング
-===========================
+# HTML5 / CSS3 モダンコーディング
 
 [HTML5 / CSS3 モダンコーディング フロントエンドエンジニアが教える 3つの本格レイアウト スタンダード・グリッド・シングルページレイアウトの作り方（吉田真麻）｜ 翔泳社の本](http://www.shoeisha.co.jp/book/detail/9784798141572)
 
@@ -9,7 +8,7 @@ HTML5 / CSS3 モダンコーディング
 cd my-standard-layout-scss
 ```
 
-See my-standard-layout-scss/README.md
+See [my-standard-layout-scss/README.md](./my-standard-layout-scss)
 
 ## PART 2
 
