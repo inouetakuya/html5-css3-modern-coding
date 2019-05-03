@@ -21,3 +21,7 @@ open http://localhost:3000
 ```
 
 Browsersync の設定ページは <http://localhost:3001>
+
+## Netlify
+
+<https://my-standard-layout-scss.netlify.com/>
