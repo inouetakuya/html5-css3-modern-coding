@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "axios": "^0.18.1",
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.26.7",
     "node-sass": "^4.12.0",
     "nodemon": "^1.19.0",
     "rimraf": "^2.6.3"
